@@ -1,0 +1,24 @@
+name: sidekiq_relay
+version: 0.1.0
+
+authors:
+  - Paul Geraghty <pgeraghty07@gmail.com>
+
+dependencies:
+  redis:
+   github: pgeraghty/crystal-redis
+   branch: pipeline_multi
+   version: ~> 2.2.1
+
+  sidekiq:
+    github: mperham/sidekiq.cr
+    branch: master
+    version: ~> 0.7.0
+
+  redis-sentinel:
+    github: pgeraghty/redis-sentinel-crystal
+    branch: master
+
+crystal: 0.30.1
+
+license: MIT
