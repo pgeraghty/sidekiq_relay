@@ -1,5 +1,7 @@
 # Sidekiq Relay 
 
+[![Build Status](https://travis-ci.com/pgeraghty/sidekiq_relay.svg?branch=master)](https://travis-ci.com/pgeraghty/sidekiq_relay)
+
 Allows piping of Sidekiq jobs to remote Sidekiq configurations (i.e. non-local Redis) to reduce delays compared to directly enqueuing to remote Redis instances. Supports Redis Sentinel.
 
 Ruby gem coming soon to use in conjunction (e.g. for enqueuing from Rails applications).
@@ -19,7 +21,7 @@ Ruby gem coming soon to use in conjunction (e.g. for enqueuing from Rails applic
 ## Usage
 
 ```crystal
-require "sk_relay"
+require "sidekiq_relay"
 ```
 Given the environment established via the [example Redis 4 Docker Compose file](docker/redis4/docker-compose.yml), tests should complete successfully.
 
@@ -28,7 +30,7 @@ TODO: Write further usage instructions here
 
 TODO: example.cr that just needs Redis config
 
-TODO: allow loading remote Redis config from YAML
+TODO: allow loading remote Redis config from YAML alongside a Docker image containing a statically-linked binary.
 
 ## Development
 
